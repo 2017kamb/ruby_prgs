@@ -28,4 +28,7 @@
 >> 'RaJ KUmAR'.upcase.reverse
 >> 'RaJ KUmAR'.upcase.reverse.next
 => "RAMUK JAS"
-
+>> 'raj kumar'.length
+=> 9
+>> 'raj kumar'.size
+=> 9
