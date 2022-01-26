@@ -1,2 +1,1 @@
-# ruby_prgs
-ruby programs
+# Ruby programs 
