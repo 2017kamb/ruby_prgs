@@ -1,6 +1,7 @@
 $LOAD_PATH << 'lib'
 require 'my_calc.rb' # require a file that have a  class
 require 'calc.rb' # require a file that have a module
+require 'greet.rb' # require a file that have a module having class
 
 # Testing for required class
 calc2 = MyCalc.new(20, 40)
@@ -45,3 +46,19 @@ class Testa
 end
 
 puts Testa.subtract(20, 100) # -80
+
+# accessing module class
+greet_obj = Greet::Greeting.new('Raj Kumar Sharma')
+puts greet_obj.greet_me # Hello Raj Kumar Sharma
+# puts Greeting.say_bye # require_test.rb:53:in `<main>': uninitialized constant Greeting (NameError)
+puts Greet::Greeting.say_bye # Goodbye...
+
+# can not access module class directly without include
+# greet_obj1 = Greeting.new('Rk') # require_test.rb:55:in `<main>': uninitialized constant Greeting (NameError)
+
+# accessing module class after include
+include Greet
+
+greet_obj2 = Greeting.new('raj')
+puts greet_obj2.greet_me # Hello raj
+puts Greeting.say_bye # Goodbye...
