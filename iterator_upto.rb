@@ -30,3 +30,17 @@ end
 # Om Namah Shivay e
 # Om Namah Shivay f
 # Om Namah Shivay g
+
+15.upto 10 do |counter|
+  puts "Om Namah Shivay #{counter}"
+end
+
+# No output
+
+3.upto(5) do |num|
+  puts num
+end
+
+# 3
+# 4
+# 5

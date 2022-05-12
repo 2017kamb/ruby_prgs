@@ -13,3 +13,12 @@ end
 # Om Namah Shivay 8
 # Om Namah Shivay 9
 # Om Namah Shivay 10
+
+3.times do
+  puts'Hari Om!'
+end
+
+# Hari Om!
+# Hari Om!
+# Hari Om!
+
