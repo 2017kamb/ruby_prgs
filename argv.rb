@@ -1,3 +1,4 @@
+# The ARGV constant is an array that holds the command-line arguments passed to a Ruby script. 
 puts ARGV.join('|||')
 puts ARGV[0]
 puts ARGV[5]

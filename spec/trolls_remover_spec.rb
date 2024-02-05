@@ -1,5 +1,7 @@
 require_relative '../trolls_removal'
 
+# rspec spec/*
+
 describe 'Solution' do
   it 'pass the positive test' do
     expect(disemvowel('This website is for losers LOL!')).to eq 'Ths wbst s fr lsrs LL!'
